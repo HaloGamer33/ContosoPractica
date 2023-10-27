@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "kjFmA78iwh/RHlSX0x/GP3KyMI7vTcZtKsLNjq82cqKs17QvCtb/huvS1MnVZR1r1vzC/ea4Qa6XX17/cNBnbw==",
+  "dgSpecHash": "qg9NDk7w9tvYd97wz2G/GhAJ1a91yNhiWrqj9fakxxERZHzLN/+sIlDeqOtNTwi+neBwdo3GKLKiIT5Pfaz3hg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\HaloGamer33\\Downloads\\Razor Pages con Entity Framework Core Universidad Prác. 1\\ContosoUniversity\\ContosoUniversity.csproj",
+  "projectFilePath": "C:\\Users\\HaloGamer33\\The Library\\Documents\\Escuela\\Universidad\\Tercer Semestre\\Web Apps\\Practicas\\ContosoUniversity\\ContosoUniversity.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\HaloGamer33\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\HaloGamer33\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

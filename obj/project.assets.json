@@ -11574,11 +11574,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\HaloGamer33\\Downloads\\Razor Pages con Entity Framework Core Universidad Prác. 1\\ContosoUniversity\\ContosoUniversity.csproj",
+      "projectUniqueName": "C:\\Users\\HaloGamer33\\The Library\\Documents\\Escuela\\Universidad\\Tercer Semestre\\Web Apps\\Practicas\\ContosoUniversity\\ContosoUniversity.csproj",
       "projectName": "ContosoUniversity",
-      "projectPath": "C:\\Users\\HaloGamer33\\Downloads\\Razor Pages con Entity Framework Core Universidad Prác. 1\\ContosoUniversity\\ContosoUniversity.csproj",
+      "projectPath": "C:\\Users\\HaloGamer33\\The Library\\Documents\\Escuela\\Universidad\\Tercer Semestre\\Web Apps\\Practicas\\ContosoUniversity\\ContosoUniversity.csproj",
       "packagesPath": "C:\\Users\\HaloGamer33\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\HaloGamer33\\Downloads\\Razor Pages con Entity Framework Core Universidad Prác. 1\\ContosoUniversity\\obj\\",
+      "outputPath": "C:\\Users\\HaloGamer33\\The Library\\Documents\\Escuela\\Universidad\\Tercer Semestre\\Web Apps\\Practicas\\ContosoUniversity\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\HaloGamer33\\AppData\\Roaming\\NuGet\\NuGet.Config"
