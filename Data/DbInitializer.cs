@@ -7,7 +7,7 @@ namespace ContosoUniversity.Data
 {
     public static class DbInitializer
     {
-        public static void Initialize(SchoolContextSQLite context)
+        public static void Initialize(SchoolContext context)
         {
             // Look for any students.
             if (context.Students.Any())

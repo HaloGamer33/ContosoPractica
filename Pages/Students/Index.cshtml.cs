@@ -11,10 +11,10 @@ namespace ContosoUniversity.Pages.Students
 {
     public class IndexModel : PageModel
     {
-        private readonly SchoolContextSQLite _context;
+        private readonly SchoolContext _context;
         private readonly IConfiguration Configuration;
 
-        public IndexModel(SchoolContextSQLite context, IConfiguration configuration)
+        public IndexModel(SchoolContext context, IConfiguration configuration)
         {
             _context = context;
             Configuration = configuration;

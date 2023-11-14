@@ -7,9 +7,9 @@ using ContosoUniversity.Models;
 
 namespace ContosoUniversity.Data
 {
-    public class SchoolContextSQLite : DbContext
+    public class SchoolContext : DbContext
     {
-        public SchoolContextSQLite (DbContextOptions<SchoolContextSQLite> options)
+        public SchoolContext (DbContextOptions<SchoolContext> options)
             : base(options)
         {
         }

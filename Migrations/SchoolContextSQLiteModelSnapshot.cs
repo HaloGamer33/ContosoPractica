@@ -9,8 +9,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace ContosoUniversity.Migrations
 {
-    [DbContext(typeof(SchoolContextSQLite))]
-    partial class SchoolContextSQLiteModelSnapshot : ModelSnapshot
+    [DbContext(typeof(SchoolContext))]
+    partial class SchoolContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)
         {

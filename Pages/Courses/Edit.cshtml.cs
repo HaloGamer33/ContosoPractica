@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore;
 using ContosoUniversity.Data;
 using ContosoUniversity.Models;
 
-namespace ContosoUniversity.Pages.Students
+namespace ContosoUniversity.Pages.Courses
 {
     public class EditModel : PageModel
     {
@@ -21,52 +21,58 @@ namespace ContosoUniversity.Pages.Students
         }
 
         [BindProperty]
-        public Student Student { get; set; } = default!;
+        public Course Course { get; set; } = default!;
 
         public async Task<IActionResult> OnGetAsync(int? id)
         {
-            if (id == null)
+            if (id == null || _context.Courses == null)
             {
                 return NotFound();
             }
 
-            Student = await _context.Students.FindAsync(id);
-
-            if (Student == null)
+            var course =  await _context.Courses.FirstOrDefaultAsync(m => m.CourseID == id);
+            if (course == null)
             {
                 return NotFound();
             }
+            Course = course;
+           ViewData["DepartmentID"] = new SelectList(_context.Departments, "DepartmentID", "DepartmentID");
             return Page();
         }
 
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see https://aka.ms/RazorPagesCRUD.
-
-        public async Task<IActionResult> OnPostAsync(int id)
+        public async Task<IActionResult> OnPostAsync()
         {
-            var studentToUpdate = await _context.Students.FindAsync(id);
-
-            if (studentToUpdate == null)
+            if (!ModelState.IsValid)
             {
-                return NotFound();
+                return Page();
             }
 
-            if (await TryUpdateModelAsync<Student>(
-                studentToUpdate,
-                "student",
-                s => s.FirstMidName, s => s.LastName, s => s.EnrollmentDate))
+            _context.Attach(Course).State = EntityState.Modified;
+
+            try
             {
                 await _context.SaveChangesAsync();
-                return RedirectToPage("./Index");
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                if (!CourseExists(Course.CourseID))
+                {
+                    return NotFound();
+                }
+                else
+                {
+                    throw;
+                }
             }
 
-            return Page();
+            return RedirectToPage("./Index");
         }
 
-
-        private bool StudentExists(int id)
+        private bool CourseExists(int id)
         {
-            return _context.Students.Any(e => e.ID == id);
+          return _context.Courses.Any(e => e.CourseID == id);
         }
     }
 }

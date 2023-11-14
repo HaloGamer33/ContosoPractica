@@ -11,9 +11,9 @@ namespace ContosoUniversity.Pages
 {
     public class AboutModel : PageModel
     {
-        private readonly SchoolContextSQLite _context;
+        private readonly SchoolContext _context;
 
-        public AboutModel(SchoolContextSQLite context)
+        public AboutModel(SchoolContext context)
         {
             _context = context;
         }

@@ -10,10 +10,10 @@ namespace ContosoUniversity.Pages.Students
 {
     public class DeleteModel : PageModel
     {
-        private readonly ContosoUniversity.Data.SchoolContextSQLite _context;
+        private readonly ContosoUniversity.Data.SchoolContext _context;
         private readonly ILogger<DeleteModel> _logger;
 
-        public DeleteModel(ContosoUniversity.Data.SchoolContextSQLite context,
+        public DeleteModel(ContosoUniversity.Data.SchoolContext context,
                            ILogger<DeleteModel> logger)
         {
             _context = context;
